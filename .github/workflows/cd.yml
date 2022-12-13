@@ -12,6 +12,7 @@ jobs:
           uses: appleboy/ssh-action@master
           with:
             repo-token: ${{ secrets.GITHUB_TOKEN }}
+            password: ${{ secrets.SSH_PASSWORD }}
             port: 22
             script: | 
                 cd /var/www/html/nextjstes 
